@@ -27,6 +27,10 @@
   .tree a{color:var(--ink);text-decoration:underline dotted;text-underline-offset:4px}
   .tree a:hover{color:var(--accent)}
   html{scroll-behavior:smooth}
+  .menu{display:flex;flex-wrap:wrap;gap:6px 22px;margin:0 0 36px;font-size:.95rem}
+  .menu a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px}
+  .menu a:hover{color:var(--accent);border-color:var(--accent)}
+  h2{scroll-margin-top:20px}
   .module{scroll-margin-top:20px;border-top:1px solid var(--line);padding:20px 0}
   .module:last-of-type{border-bottom:1px solid var(--line)}
   .tags{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none;margin:10px 0 12px}
@@ -37,12 +41,20 @@
 </head>
 <body>
 <main>
+  <nav class="menu" aria-label="Разделы страницы">
+    <a href="#projects">Проекты</a>
+    <a href="#certs">Сертификаты</a>
+    <a href="#skills">Навыки</a>
+    <a href="#about">Обо мне</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+
   <h1>Максим Манахов,<br>программист <span class="hl">1С</span></h1>
   <p class="lead">Начинающий 1С-разработчик из Гомеля. Прошёл сертифицированный курс «1С-программист» (288 академических часов, Skillbox) и сделал три проекта: CRM, автоматизацию отеля и доработку типовой конфигурации через расширения. Раньше работал в рознице и знаю 1С глазами пользователя. Рассматриваю стажировку, проектную работу, офис и удалёнку.</p>
 
-  <div class="tree" aria-label="Структура пройденной программы">
+  <div class="tree" aria-label="Список проектов">
     <ul>
-      <li>Конфигурация «Портфолио»
+      <li><a href="#projects">Проекты</a>
         <ul>
           <li><a href="#crm">1. CRM для продажи мобильной техники</a></li>
           <li><a href="#hotel">2. Автоматизация отеля «Точка останова»</a></li>
@@ -52,7 +64,7 @@
     </ul>
   </div>
 
-  <h2>Проекты</h2>
+  <h2 id="projects">Проекты</h2>
 
   <section class="module" id="crm">
     <h3>1. Самописная CRM для компании по продаже мобильной техники</h3>
@@ -116,7 +128,7 @@
 
   <p style="margin-top:20px"><a href="https://disk.yandex.by/d/JzFkh5vp6we1Hg">Все сертификаты 1С</a></p>
 
-  <h2>Сертификаты</h2>
+  <h2 id="certs">Сертификаты</h2>
   <style>.certs{display:flex;flex-wrap:wrap;gap:20px;margin:0 0 12px}.certs figure{margin:0;flex:1 1 220px;max-width:300px}.certs img{width:100%;height:auto;border:1px solid var(--line);display:block}</style>
   <div class="certs">
     <figure>
@@ -129,7 +141,7 @@
     </figure>
   </div>
 
-  <h2>Навыки</h2>
+  <h2 id="skills">Навыки</h2>
   <ul class="list">
     <li>Платформа 1С:Предприятие 8.3: управляемые формы, клиент-серверная архитектура, встроенный язык.</li>
     <li>Язык запросов и оптимизация, отчёты на СКД.</li>
@@ -140,10 +152,10 @@
     <li>Командная разработка через хранилище конфигурации. Excel и Google Sheets.</li>
   </ul>
 
-  <h2>Обо мне</h2>
+  <h2 id="about">Обо мне</h2>
   <p>Работал в магазине «Зообазар» продавцом и комплектовщиком заказов. Работал в «1С:Розница» и «1С:Управление торговлей», на кассе и в Битриксе. Сам настроил в Excel контроль сроков годности и автоматизировал ведомости инкассации. Так заинтересовался программированием и перешёл в ИТ. Сейчас изучаю базовый курс «1С:Аналитик», чтобы точнее собирать требования заказчика.</p>
 
-  <h2>Контакты</h2>
+  <h2 id="contacts">Контакты</h2>
   <p>
     Почта: <a href="mailto:manakhov2003@gmail.com">manakhov2003@gmail.com</a><br>
     Telegram: <a href="https://t.me/pivnoe_pusiko">@pivnoe_pusiko</a><br>
