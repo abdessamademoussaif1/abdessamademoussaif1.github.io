@@ -24,7 +24,10 @@
   .tree{background:var(--code);border:1px solid var(--line);border-radius:6px;padding:16px 20px;font:15px/1.9 Consolas,"Courier New",monospace;margin-top:28px;overflow-x:auto}
   .tree ul{list-style:none;margin:0;padding-left:20px;border-left:1px solid var(--line)}
   .tree>ul{border:0;padding:0}
-  .module{border-top:1px solid var(--line);padding:20px 0}
+  .tree a{color:var(--ink);text-decoration:underline dotted;text-underline-offset:4px}
+  .tree a:hover{color:var(--accent)}
+  html{scroll-behavior:smooth}
+  .module{scroll-margin-top:20px;border-top:1px solid var(--line);padding:20px 0}
   .module:last-of-type{border-bottom:1px solid var(--line)}
   .tags{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none;margin:10px 0 12px}
   .tags li{border:1px solid var(--line);border-radius:4px;padding:2px 10px;font-size:.9rem}
@@ -41,9 +44,9 @@
     <ul>
       <li>Конфигурация «Портфолио»
         <ul>
-          <li>1. CRM для продажи мобильной техники</li>
-          <li>2. Автоматизация отеля «Точка останова»</li>
-          <li>3. Доработка «Альфа-Трейд» на БСП</li>
+          <li><a href="#crm">1. CRM для продажи мобильной техники</a></li>
+          <li><a href="#hotel">2. Автоматизация отеля «Точка останова»</a></li>
+          <li><a href="#alfa">3. Доработка «Альфа-Трейд» на БСП</a></li>
         </ul>
       </li>
     </ul>
@@ -51,7 +54,7 @@
 
   <h2>Проекты</h2>
 
-  <section class="module">
+  <section class="module" id="crm">
     <h3>1. Самописная CRM для компании по продаже мобильной техники</h3>
     <p class="muted">Модуль «Основы конфигурирования в 1С и оперативный учёт». Разработка с нуля.</p>
     <p>Спроектировал структуру данных и создал подсистему CRM: менеджеры хранят историю переговоров, планируют напоминания и видят все данные по клиенту в одной карточке.</p>
@@ -70,7 +73,7 @@
     </figure>
   </section>
 
-  <section class="module">
+  <section class="module" id="hotel">
     <h3>2. Информационная система отеля «Точка останова»</h3>
     <p class="muted">Модуль «Решение бухгалтерских и расчётных задач. Технологии и инструменты разработки в 1С». Доработка каркасной конфигурации с подсистемами БСП.</p>
     <p>Учётная система для отеля: от бронирования номера до расчёта зарплаты сотрудников.</p>
@@ -91,7 +94,7 @@
     </figure>
   </section>
 
-  <section class="module">
+  <section class="module" id="alfa">
     <h3>3. Модификация учётной системы «Альфа-Трейд» на БСП</h3>
     <p class="muted">Модуль «Продвинутая разработка в 1С». Доработка по регламенту заказчика без снятия конфигурации с поддержки.</p>
     <p>Типовые объекты изменены только через расширение (.cfe) с аннотациями &amp;Перед, &amp;После и &amp;ИзменениеИКонтроль. Новые объекты созданы в основной конфигурации с префиксом СБ_. Код прокомментирован по правилам заказчика.</p>
