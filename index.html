@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Максим Манахов — программист 1С</title>
+<meta name="description" content="Портфолио начинающего 1С-разработчика: CRM, автоматизация отеля, доработка конфигурации на БСП через расширения.">
+<style>
+  :root{--bg:#fbfaf6;--ink:#22252b;--muted:#5d6470;--line:#d9d6cb;--accent:#c8102e;--mark:#f6d54a;--code:#eeece3}
+  @media (prefers-color-scheme:dark){:root{--bg:#1b1d22;--ink:#ecebe6;--muted:#a0a6b1;--line:#363a43;--accent:#ff6b7f;--mark:#8a7414;--code:#252830}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 "Segoe UI",Roboto,Arial,sans-serif}
+  main{max-width:760px;margin:0 auto;padding:56px 22px 80px}
+  h1{font:700 clamp(2rem,6vw,3rem)/1.1 Georgia,"Times New Roman",serif;margin:0 0 12px}
+  h2{font:700 1.4rem/1.2 Georgia,serif;margin:56px 0 18px}
+  h3{font-size:1.05rem;margin:0 0 6px}
+  p{margin:0 0 12px}
+  ul.list{margin:0 0 12px;padding-left:20px}
+  ul.list li{margin-bottom:4px}
+  .lead{color:var(--muted);max-width:60ch}
+  .hl{background:linear-gradient(transparent 55%,var(--mark) 55%)}
+  a{color:var(--accent)}
+  a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+  .tree{background:var(--code);border:1px solid var(--line);border-radius:6px;padding:16px 20px;font:15px/1.9 Consolas,"Courier New",monospace;margin-top:28px;overflow-x:auto}
+  .tree ul{list-style:none;margin:0;padding-left:20px;border-left:1px solid var(--line)}
+  .tree>ul{border:0;padding:0}
+  .module{border-top:1px solid var(--line);padding:20px 0}
+  .module:last-of-type{border-bottom:1px solid var(--line)}
+  .tags{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none;margin:10px 0 12px}
+  .tags li{border:1px solid var(--line);border-radius:4px;padding:2px 10px;font-size:.9rem}
+  .muted{color:var(--muted)}
+  footer{margin-top:56px;color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+  <h1>Максим Манахов,<br>программист <span class="hl">1С</span></h1>
+  <p class="lead">Начинающий 1С-разработчик из Гомеля. Прошёл сертифицированный курс «1С-программист» (288 академических часов, Skillbox) и сделал три проекта: CRM, автоматизацию отеля и доработку типовой конфигурации через расширения. Раньше работал в рознице и знаю 1С глазами пользователя. Рассматриваю стажировку, проектную работу, офис и удалёнку.</p>
+
+  <div class="tree" aria-label="Структура пройденной программы">
+    <ul>
+      <li>Конфигурация «Портфолио»
+        <ul>
+          <li>1. CRM для продажи мобильной техники</li>
+          <li>2. Автоматизация отеля «Точка останова»</li>
+          <li>3. Доработка «Альфа-Трейд» на БСП</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <h2>Проекты</h2>
+
+  <section class="module">
+    <h3>1. Самописная CRM для компании по продаже мобильной техники</h3>
+    <p class="muted">Модуль «Основы конфигурирования в 1С и оперативный учёт». Разработка с нуля.</p>
+    <p>Спроектировал структуру данных и создал подсистему CRM: менеджеры хранят историю переговоров, планируют напоминания и видят все данные по клиенту в одной карточке.</p>
+    <ul class="list">
+      <li>Статусы контрагентов и предупреждение в заказе, если с клиентом больше не работаем.</li>
+      <li>Документ «Взаимодействие» и регистр сведений «Напоминания».</li>
+      <li>Регистр «Документы по контрагентам»: заказы, отгрузки и платежи в одном месте.</li>
+      <li>Прогрессивная скидка по годовому объёму закупок. В проведённом заказе процент не пересчитывается.</li>
+      <li>Печатная форма «Счёт на оплату» с логотипом и скидкой, отчёт «Продажи по покупателям» на СКД.</li>
+    </ul>
+    <ul class="tags"><li>Справочники</li><li>Документы</li><li>Регистры сведений</li><li>СКД</li><li>Печатные формы</li><li>Язык запросов</li></ul>
+    <p><a href="https://disk.yandex.by/d/sDriIR2bF6Cegg">Материалы проекта</a></p>
+    <figure style="margin:16px 0 0">
+      <img src="certificate-module-1.png" alt="Сертификат Skillbox: Основы конфигурирования в 1С и оперативный учёт" style="max-width:240px;width:100%;height:auto;border:1px solid var(--line)">
+      <figcaption class="muted">Сертификат Skillbox, 02.02.2026</figcaption>
+    </figure>
+  </section>
+
+  <section class="module">
+    <h3>2. Информационная система отеля «Точка останова»</h3>
+    <p class="muted">Модуль «Решение бухгалтерских и расчётных задач. Технологии и инструменты разработки в 1С». Доработка каркасной конфигурации с подсистемами БСП.</p>
+    <p>Учётная система для отеля: от бронирования номера до расчёта зарплаты сотрудников.</p>
+    <ul class="list">
+      <li>Документ «Бронирование»: клиент, гости, даты, номер и дополнительные услуги. Цены номеров и услуг хранятся в периодическом регистре сведений.</li>
+      <li>Контроль занятости: при проведении бронь записывается в регистр по каждому дню. Если номер занят на выбранные даты, документ не проводится.</li>
+      <li>Печатная форма счёта на оплату через подсистему «Печать» БСП.</li>
+      <li>Документ «Оплата» и регистр накопления «ВзаиморасчетыСКлиентами». Клиент может платить частями, отчёт показывает задолженность и переплату.</li>
+      <li>Расчёт зарплаты: оклад по графику работы, премия, отпуск и больничный. Отпуск и больничный вытесняют оклад.</li>
+      <li>Отражение зарплаты в бухучёте: проводки Дт 26 – Кт 70 со статьями затрат.</li>
+      <li>Роли для менеджеров и бухгалтеров через группы и профили доступа БСП.</li>
+    </ul>
+    <ul class="tags"><li>Регистры сведений</li><li>Регистры накопления</li><li>Регистры расчёта</li><li>Регистры бухгалтерии</li><li>БСП</li><li>Роли и права</li></ul>
+    <p><a href="https://disk.yandex.by/d/3A51ghPVbglz4A">Материалы проекта</a></p>
+    <figure style="margin:16px 0 0">
+      <img src="certificate-module-2.png" alt="Сертификат Skillbox: Решение бухгалтерских и расчётных задач. Технологии и инструменты разработки в 1С" style="max-width:240px;width:100%;height:auto;border:1px solid var(--line)">
+      <figcaption class="muted">Сертификат Skillbox, 30.03.2026</figcaption>
+    </figure>
+  </section>
+
+  <section class="module">
+    <h3>3. Модификация учётной системы «Альфа-Трейд» на БСП</h3>
+    <p class="muted">Модуль «Продвинутая разработка в 1С». Доработка по регламенту заказчика без снятия конфигурации с поддержки.</p>
+    <p>Типовые объекты изменены только через расширение (.cfe) с аннотациями &amp;Перед, &amp;После и &amp;ИзменениеИКонтроль. Новые объекты созданы в основной конфигурации с префиксом СБ_. Код прокомментирован по правилам заказчика.</p>
+    <ul class="list">
+      <li>Учёт себестоимости: регистр накопления остатков по номенклатуре и складам. Проведение поступления и реализации делает движения, контролирует остатки и списывает себестоимость по средней цене.</li>
+      <li>Внешний отчёт на СКД (.erf) «Анализ остатков и себестоимости»: вычисляемое поле средней себестоимости и три варианта настроек.</li>
+      <li>Проверка контрагентов: поле и кнопка «Обновить маркер» добавлены на форму программно. Кнопка отправляет HTTP-запрос к сервису, разбирает JSON-ответ и присваивает статус надёжности. История проверок хранится в периодическом регистре сведений.</li>
+      <li>Документ «Перемещение товаров» и внешняя печатная форма ТОРГ-13 (.epf), подключённая через встраиваемые обработки БСП.</li>
+      <li>План обмена с филиалом: настроен состав объектов.</li>
+      <li>Новый вид расчёта зарплаты «Премия»: план видов расчёта, регистр расчёта и расчёт от базы за предыдущий период.</li>
+    </ul>
+    <ul class="tags"><li>Расширения (.cfe)</li><li>БСП</li><li>HTTP и JSON</li><li>СКД</li><li>Внешние отчёты и печать</li><li>Планы обмена</li><li>Регистры расчёта</li></ul>
+    <p><a href="https://disk.yandex.by/d/VtfGsQlY3QY0aA">Материалы проекта</a></p>
+    <figure style="margin:16px 0 0">
+      <img src="certificate-module-3.png" alt="Сертификат Skillbox: Продвинутая разработка в 1С" style="max-width:240px;width:100%;height:auto;border:1px solid var(--line)">
+      <figcaption class="muted">Сертификат Skillbox, 30.04.2026</figcaption>
+    </figure>
+  </section>
+
+  <p style="margin-top:20px"><a href="https://disk.yandex.by/d/JzFkh5vp6we1Hg">Все сертификаты 1С</a></p>
+
+  <h2>Сертификаты</h2>
+  <style>.certs{display:flex;flex-wrap:wrap;gap:20px;margin:0 0 12px}.certs figure{margin:0;flex:1 1 220px;max-width:300px}.certs img{width:100%;height:auto;border:1px solid var(--line);display:block}</style>
+  <div class="certs">
+    <figure>
+      <img src="certificate-1c.jpg" alt="Свидетельство Центра сертифицированного обучения 1С: курс 1С-программист, 288 академических часов">
+      <figcaption class="muted">Свидетельство ЦСО 1С: «1С-программист», 288 ак. часов, 03.06.2026</figcaption>
+    </figure>
+    <figure>
+      <img src="certificate-lerna.png" alt="Сертификат Lerna: Профессия 1С-программист">
+      <figcaption class="muted">Lerna: «Профессия 1С-программист», 24.05.2026</figcaption>
+    </figure>
+  </div>
+
+  <h2>Навыки</h2>
+  <ul class="list">
+    <li>Платформа 1С:Предприятие 8.3: управляемые формы, клиент-серверная архитектура, встроенный язык.</li>
+    <li>Язык запросов и оптимизация, отчёты на СКД.</li>
+    <li>Регистры сведений, накопления и бухгалтерии, планы видов характеристик.</li>
+    <li>Печатные формы, внешние обработки, расширения конфигурации, БСП.</li>
+    <li>Роли и права доступа, RLS.</li>
+    <li>Интеграция и обмен данными: HTTP и веб-сервисы, XML, JSON.</li>
+    <li>Командная разработка через хранилище конфигурации. Excel и Google Sheets.</li>
+  </ul>
+
+  <h2>Обо мне</h2>
+  <p>Работал в магазине «Зообазар» продавцом и комплектовщиком заказов. Работал в «1С:Розница» и «1С:Управление торговлей», на кассе и в Битриксе. Сам настроил в Excel контроль сроков годности и автоматизировал ведомости инкассации. Так заинтересовался программированием и перешёл в ИТ. Сейчас изучаю базовый курс «1С:Аналитик», чтобы точнее собирать требования заказчика.</p>
+
+  <h2>Контакты</h2>
+  <p>
+    Почта: <a href="mailto:manakhov2003@gmail.com">manakhov2003@gmail.com</a><br>
+    Telegram: <a href="https://t.me/pivnoe_pusiko">@pivnoe_pusiko</a><br>
+    LinkedIn: <a href="https://www.linkedin.com/in/maxim-manakhov-241bb0342/">maxim-manakhov</a>
+  </p>
+
+  <footer>Сайт размещён на GitHub Pages.</footer>
+</main>
+</body>
+</html>
